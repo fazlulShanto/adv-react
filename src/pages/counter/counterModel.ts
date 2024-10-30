@@ -5,6 +5,7 @@ const initialState = {
     counter1: 0,
     counter2: 0,
     counter3: 0,
+    counter4: 0,
 };
 
 export const countModel = createModel<RootModel>()({
@@ -20,6 +21,9 @@ export const countModel = createModel<RootModel>()({
         increment3(state, payload: number) {
             return { ...state, counter3: state.counter3 + payload };
         },
+        increment4(state, payload: number) {
+            return { ...state, counter4: state.counter4 + payload };
+        },
         decrement1(state, payload: number) {
             return { ...state, counter1: state.counter1 - payload };
         },
@@ -28,6 +32,9 @@ export const countModel = createModel<RootModel>()({
         },
         decrement3(state, payload: number) {
             return { ...state, counter3: state.counter3 - payload };
+        },
+        decrement4(state, payload: number) {
+            return { ...state, counter4: state.counter4 - payload };
         },
     },
     effects: (dispatch) => ({

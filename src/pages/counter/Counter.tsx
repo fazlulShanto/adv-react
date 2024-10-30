@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import CounterCard from "./CounterCard";
 import CounterCard2 from "./CounterCard2";
 import CounterCard3 from "./CounterCard3";
+import CounterCard4 from "./CounterCard4";
 
 export function Counter() {
     return (
@@ -11,6 +12,7 @@ export function Counter() {
                 <CounterCard />
                 <CounterCard2 />
                 <CounterCard3 />
+                <CounterCard4 />
             </div>
         </Layout>
     );
