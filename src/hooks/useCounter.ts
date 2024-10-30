@@ -6,6 +6,10 @@ export default function useCounter() {
 
     const dispatch = useDispatch<Dispatch>();
 
+    const getPrinterText = () => {
+        return "Printing time " + new Date().toLocaleTimeString();
+    };
+
     // Increment functions
     const incrementCounter1 = () => dispatch.count.increment1(1);
     const incrementCounter2 = () => dispatch.count.increment2(1);
@@ -20,6 +24,7 @@ export default function useCounter() {
 
     return {
         counterValues,
+        getPrinterText,
         incrementCounter1,
         incrementCounter2,
         incrementCounter3,
