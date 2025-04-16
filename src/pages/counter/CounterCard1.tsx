@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import useCounter from "@/hooks/useCounter";
 
-function CounterCard() {
+function CounterCard1() {
     const { counterValues, incrementCounter1, decrementCounter1 } =
         useCounter();
     const counter1 = counterValues.counter1;
@@ -32,4 +32,4 @@ function CounterCard() {
     );
 }
 
-export default CounterCard;
+export default CounterCard1;

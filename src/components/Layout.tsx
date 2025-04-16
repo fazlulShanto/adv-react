@@ -8,7 +8,7 @@ function Layout({ children, className = "" }: LayoutProps) {
     return (
         <div
             className={cn(
-                "w-screen h-screen relative text-white bg-slate-900",
+                "w-screen min-h-screen relative text-white bg-slate-900",
                 className
             )}
         >
