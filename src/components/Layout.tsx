@@ -1,18 +1,15 @@
 import { cn } from "@/lib/utils";
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-    children: any;
-    className?: string;
-};
-function Layout({ children, className = "" }: LayoutProps) {
+
+function Layout() {
     return (
         <div
             className={cn(
-                "w-screen min-h-screen relative text-white bg-slate-900",
-                className
+                "max-w-screen overflow-x-hidden min-h-screen relative text-white bg-slate-900",
             )}
         >
-            {children}
+           <Outlet />
         </div>
     );
 }
